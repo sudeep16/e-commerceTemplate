@@ -4,11 +4,18 @@ const cors = require("cors");
 const mongoose = require("mongoose");
 const dotenv = require("dotenv").config();
 
+//Routers
+const userRouter = require("./routes/users");
+
 const app = express();
 app.use(cors());
 app.use(morgan("tiny"));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+app.use(express.static(__dirname + "/public"));
+
+//Routes
+app.use("/users", userRouter);
 
 //Database Config
 mongoose.connect(process.env.URL, {
