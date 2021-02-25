@@ -1,10 +1,10 @@
 import React from "react";
 import CategoryNavbar from "./Navbar/CategoryNavbar";
-import Navbar from "./Navbar/Navbar";
+import Navbars from "./Navbar/Navbar";
 function Home() {
   return (
     <>
-      <Navbar />
+      <Navbars />
       <CategoryNavbar />
     </>
   );
