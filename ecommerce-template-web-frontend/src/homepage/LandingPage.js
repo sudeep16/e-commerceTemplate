@@ -5,11 +5,11 @@ function LandingPage() {
     return (
         <>
             <div className="landing__container">
-                <section class="home section">
+                <div class="home section">
                     <div class="home__container">
                         <h1>Welcome to example Site</h1>
                     </div>
-                </section>
+                </div>
                 <Carosoul />
             </div>
         </>
