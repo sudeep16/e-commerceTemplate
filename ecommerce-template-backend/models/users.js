@@ -38,11 +38,6 @@ const userSchema = new mongoose.Schema({
     },
     image: {
         type: String
-    },
-    role: {
-        type: String,
-        default: 'basic',
-        enum: ['basic', 'admin']
     }
 });
 

@@ -6,6 +6,9 @@ const dotenv = require("dotenv").config();
 
 //Routers
 const userRouter = require("./routes/users");
+const adminRouter = require("./routes/admin");
+const categoryRouter = require("./routes/category");
+const subcategoryRouter = require("./routes/subcategory");
 
 const app = express();
 app.use(cors());
@@ -16,6 +19,9 @@ app.use(express.static(__dirname + "/public"));
 
 //Routes
 app.use("/users", userRouter);
+app.use("/admin", adminRouter);
+app.use("/category", categoryRouter);
+app.use("/subcategory", subcategoryRouter);
 
 //Database Config
 mongoose.connect(process.env.URL, {

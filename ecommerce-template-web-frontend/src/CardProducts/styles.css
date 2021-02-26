@@ -1,0 +1,49 @@
+.app {
+  font-family: sans-serif;
+  display: flex;
+  margin-top: 20px;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
+}
+
+.heading_text {
+  text-align: center;
+  margin: 2em 0 0.5em 0;
+  font-weight: normal;
+  font-family: "Ultra", sans-serif;
+  font-size: 36px;
+  line-height: 42px;
+  text-transform: uppercase;
+  text-shadow: 0 2px white, 0 3px #777;
+  color: rgba(102, 48, 167, 1) 0%;
+}
+.carousel {
+  padding: 20px 0;
+}
+
+.card-body {
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.card-image {
+  height: 60%;
+  width: 60%;
+  align-items: center;
+  justify-content: center;
+
+  /* margin-bottom: 70px; */
+}
+
+.card-heading {
+  font-size: 15px;
+  text-align: center;
+  color: black;
+}
+
+.card-button {
+  margin: 0;
+  padding: 0;
+}

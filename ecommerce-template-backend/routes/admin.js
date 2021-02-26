@@ -1,31 +1,24 @@
 const express = require("express");
 const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
-const User = require("../models/users");
+const Admin = require("../models/admin");
 const router = express.Router();
 
 //Registration
 router.post("/register", (req, res, next) => {
     let password = req.body.password;
-    bcrypt.hash(password, 7, (err, hash) => {
+    bcrypt.hash(password, 10, (err, hash) => {
         console.log(err);
         if (err) {
             let err = new Error("Could not hash");
             err.status = 500;
             return next(err);
         }
-        User.create({
-            firstName: req.body.firstName,
-            lastName: req.body.lastName,
-            location: req.body.location,
+        Admin.create({
             username: req.body.username,
-            email: req.body.email,
-            phone: req.body.phone,
-            gender: req.body.gender,
             password: hash,
-            image: req.body.image
-        }).then((user) => {
-            let token = jwt.sign({ _id: user._id }, process.env.SECRET);
+        }).then((admin) => {
+            let token = jwt.sign({ _id: admin._id }, process.env.SECRET);
             res.json({
                 status: "Registered Successfully!",
                 token: token
@@ -36,15 +29,15 @@ router.post("/register", (req, res, next) => {
 
 //Login
 router.post("/login", (req, res, next) => {
-    User.findOne({
+    Admin.findOne({
         username: req.body.username
-    }).then((user) => {
-        if (user == null) {
-            let err = new Error("User not found");
+    }).then((admin) => {
+        if (admin == null) {
+            let err = new Error("Admin not found");
             err.status = 401;
             return next(err);
         } else {
-            bcrypt.compare(req.body.password, user.password)
+            bcrypt.compare(req.body.password, admin.password)
                 .then((isMatch) => {
                     if (!isMatch) {
                         let err = new Error("Password doesn't match. Try again!");
@@ -52,7 +45,7 @@ router.post("/login", (req, res, next) => {
                         return (err);
                     }
                     let token = jwt.sign({
-                        _id: user._id,
+                        _id: admin._id,
                     }, process.env.SECRET);
                     res.json({
                         status: "Login successful",
