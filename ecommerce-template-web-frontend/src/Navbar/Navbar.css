@@ -194,7 +194,6 @@ a {
     rgba(0, 150, 255, 1) 100%
   );
   padding: 0 1rem;
-  border-bottom: var(--border);
 }
 
 .navbar__catNav {
