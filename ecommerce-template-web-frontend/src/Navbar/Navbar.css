@@ -17,8 +17,7 @@
 .fa-shopping-cart {
   color: #fff;
 }
-/* .fa-shopping-cart:hover {
-} */
+
 .fa-shopping-cart .tooltiptext {
   visibility: hidden;
   width: 120px;
@@ -49,6 +48,61 @@
 
 .fa-shopping-cart:hover .tooltiptext {
   visibility: visible;
+}
+
+ul,
+li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* hide menu */
+.menu {
+  display: none;
+  clear: both;
+  background-color: white;
+  margin: 20px 0 0 0;
+  border-radius: 3px;
+}
+.menu li {
+  font-size: 14px;
+  margin: 0;
+  padding: 10px 4px;
+}
+.menu li a {
+  color: #555;
+}
+.menu li:hover > a {
+  color: #eee;
+}
+
+.menu li:hover {
+  border-left: 1px solid #111;
+  border-right: 1px solid #222;
+  border-bottom: 1px solid #222;
+  border-top: 1px solid #111;
+  border-radius: 3px;
+}
+
+/* hover profile show menu */
+.nav-links-account:hover .menu {
+  display: block;
+}
+
+.nav-links-account {
+  color: #fff;
+  top: 20px;
+  right: 10px;
+  margin-top: 12px;
+  align-items: center;
+  text-decoration: none;
+  padding: 0.5rem 2rem;
+  height: 100%;
+}
+
+.nav-links-account:hover {
+  cursor: pointer;
 }
 
 .navbar-container-main {
@@ -120,86 +174,6 @@
 .menu-icon-main {
   display: none;
 }
-/* 
-@media screen and (max-width: 960px) {
-  .NavbarItems {
-    position: relative;
-  }
-
-  .nav-menu-main {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 100vh;
-    position: absolute;
-    top: 80px;
-    left: -100%;
-    opacity: 1;
-    transition: all 0.5s ease;
-  }
-
-  .nav-menu-main.active {
-    background: #242222;
-    left: 0;
-    opacity: 1;
-    transition: all 0.5s ease;
-    z-index: 1;
-  }
-
-  .nav-links-main {
-    text-align: center;
-    padding: 2rem;
-    width: 100%;
-    display: table;
-  }
-
-  .nav-links-main:hover {
-    background-color: #fff;
-    color: #242424;
-    border-radius: 0;
-  }
-
-  .navbar-logo-main {
-    position: flex;
-    align-content: center;
-  }
-
-  .menu-icon-main {
-    display: block;
-    position: absolute;
-    top: 0;
-    right: 0;
-    transform: translate(-100%, 60%);
-    font-size: 1.8rem;
-    cursor: pointer;
-  }
-
-  .fa-times {
-    color: #fff;
-    font-size: 2rem;
-  }
-
-  .nav-links-main-mobile {
-    display: block;
-    text-align: center;
-    margin: 2rem auto;
-    border-radius: 4px;
-    width: 80%;
-    text-decoration: none;
-    font-size: 1.5rem;
-    background-color: transparent;
-    color: #fff;
-    padding: 14px 20px;
-    border: 1px solid #fff;
-    transition: all 0.3s ease-out;
-  }
-
-  .nav-links-main-mobile:hover {
-    background: #fff;
-    color: #242424;
-    transition: 250ms;
-  }
-} */
 ul {
   list-style: none;
   margin: 0;

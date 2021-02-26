@@ -34,30 +34,33 @@ function Navbars() {
                 </i>
               </Link>
             </li>
+
             <li className="nav-item-main">
               <Link to="/about" className="nav-links-main">
                 About Us
               </Link>
             </li>
-
             <li className="nav-item-main">
-              <div className="nav-links-main">
-                <i class="fas fa-user-alt"></i> <span>My Account</span>
-                {/* <label for="profile2">
-                  <i class="fas fa-hamburger"></i>
-                </label>
-                <ul>
+              <div className="nav-links-account">
+                <i class="fas fa-user"></i> &nbsp; My Account
+                <ul class="menu">
                   <li>
-                    <a href="#">
-                      <i class="mdi mdi-email-outline"></i>Messages
-                    </a>
+                    <i
+                      class="fas fa-sign-in-alt"
+                      style={{ color: "black" }}
+                    ></i>
+                    &nbsp;
+                    <a href="#">Login</a>
                   </li>
+                  <p style={{ color: "purple", marginLeft: "8px" }}>
+                    New User?
+                  </p>
                   <li>
-                    <a href="#">
-                      <i class="mdi mdi-account"></i>Account
-                    </a>
+                    <i class="fas fa-user-plus" style={{ color: "black" }}></i>
+                    &nbsp;
+                    <a href="#">Sign Up</a>
                   </li>
-                </ul> */}
+                </ul>
               </div>
             </li>
           </ul>
