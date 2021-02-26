@@ -16,6 +16,7 @@ router.route("/")
     });
 
 //POST, UPDATE and DELETE by admin only
+//POST with parameter category name
 router.route("/:parentcategory", auth.verifyAdmin)
     .post((req, res, next) => {
         let subcategory = new SubCategory(req.body);
