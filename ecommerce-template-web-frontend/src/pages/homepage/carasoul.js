@@ -30,22 +30,22 @@ export default function Carasoul() {
           disableArrowsOnEnd={false}
         >
           <div className="item">
-            <img src="images/hoddie.jpg" className="card_size" />
+            <img src="images/hoddie.jpg" className="card_size" alt="" />
           </div>
           <div className="item">
-            <img src="images/nike.jpg" className="card_size" />
+            <img src="images/nike.jpg" className="card_size" alt="" />
           </div>
           <div className="item">
-            <img src="images/jogger.jpg" className="card_size" />
+            <img src="images/jogger.jpg" className="card_size" alt="" />
           </div>
           <div className="item">
-            <img src="images/hoddie.jpg" className="card_size" />
+            <img src="images/hoddie.jpg" className="card_size" alt="" />
           </div>
           <div className="item">
-            <img src="images/nike.jpg" className="card_size" />
+            <img src="images/nike.jpg" className="card_size" alt="" />
           </div>
           <div className="item">
-            <img src="images/jogger.jpg" className="card_size" />
+            <img src="images/jogger.jpg" className="card_size" alt="" />
           </div>
         </Carousel>
       </div>

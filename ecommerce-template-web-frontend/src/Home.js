@@ -1,9 +1,9 @@
 import React from "react";
-import CategoryNavbar from "./Navbar/CategoryNavbar";
-import Navbars from "./Navbar/Navbar";
-import LandingPage from "./homepage/LandingPage";
-import RecentProducts from "./RecentProducts/RecentProducts";
-import CardProducts from "./CardProducts/CardProducts";
+import CategoryNavbar from "./components/Navbar/CategoryNavbar";
+import Navbars from "./components/Navbar/Navbar";
+import LandingPage from "./pages/homepage/LandingPage";
+import RecentProducts from "./pages/homepage/RecentProducts/RecentProducts";
+import CardProducts from "./pages/homepage/CardProducts/CardProducts";
 function Home() {
   return (
     <>

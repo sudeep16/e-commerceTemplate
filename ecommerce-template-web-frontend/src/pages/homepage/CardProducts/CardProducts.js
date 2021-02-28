@@ -2,7 +2,7 @@ import React from "react";
 import Item from "./Items";
 import Carousel from "react-elastic-carousel";
 import "./styles.css";
-import image from "../assets/images/img-9.jpg";
+import image from "../../../assets/images/img-9.jpg";
 
 const breakPoints = [
   { width: 1, itemsToShow: 1 },
@@ -20,7 +20,7 @@ function CardProducts() {
         <Carousel className="carousel" breakPoints={breakPoints}>
           <Item>
             <div className="card-body">
-              <img className="card-image" src={image} />
+              <img className="card-image" src={image} alt="" />
               <h5 className="card-heading">Product</h5>
               <label className="card-heading">$20</label>
               <br />
@@ -29,7 +29,7 @@ function CardProducts() {
           </Item>
           <Item>
             <div className="card-body">
-              <img className="card-image" src={image} />
+              <img className="card-image" src={image} alt="" />
               <h5 className="card-heading">Product</h5>
               <p className="card-heading">$20</p>
               <button className="card-button">Submit</button>
@@ -37,7 +37,7 @@ function CardProducts() {
           </Item>
           <Item>
             <div className="card-body">
-              <img className="card-image" src={image} />
+              <img className="card-image" src={image} alt="" />
               <h5 className="card-heading">Product</h5>
               <p className="card-heading">$20</p>
               <button className="card-button">Submit</button>
@@ -45,7 +45,7 @@ function CardProducts() {
           </Item>
           <Item>
             <div className="card-body">
-              <img className="card-image" src={image} />
+              <img className="card-image" src={image} alt="" />
               <h5 className="card-heading">Product</h5>
               <p className="card-heading">$20</p>
               <button className="card-button">Submit</button>
@@ -53,7 +53,7 @@ function CardProducts() {
           </Item>
           <Item>
             <div className="card-body">
-              <img className="card-image" src={image} />
+              <img className="card-image" src={image} alt="" />
               <h5 className="card-heading">Product</h5>
               <p className="card-heading">$20</p>
               <button className="card-button">Submit</button>
@@ -61,7 +61,7 @@ function CardProducts() {
           </Item>
           <Item>
             <div className="card-body">
-              <img className="card-image" src={image} />
+              <img className="card-image" src={image} alt="" />
               <h5 className="card-heading">Product</h5>
               <p className="card-heading">$20</p>
               <button className="card-button">Submit</button>
@@ -69,7 +69,7 @@ function CardProducts() {
           </Item>
           <Item>
             <div className="card-body">
-              <img className="card-image" src={image} />
+              <img className="card-image" src={image} alt="" />
               <h5 className="card-heading">Product</h5>
               <p className="card-heading">$20</p>
               <button className="card-button">Submit</button>
@@ -77,7 +77,7 @@ function CardProducts() {
           </Item>
           <Item>
             <div className="card-body">
-              <img className="card-image" src={image} />
+              <img className="card-image" src={image} alt="" />
               <h5 className="card-heading">Product</h5>
               <p className="card-heading">$20</p>
               <button className="card-button">Submit</button>
@@ -91,7 +91,7 @@ function CardProducts() {
         <Carousel className="carousel" breakPoints={breakPoints}>
           <Item>
             <div className="card-body">
-              <img className="card-image" src={image} />
+              <img className="card-image" src={image} alt="" />
               <h5 className="card-heading">Product</h5>
               <label className="card-heading">$20</label>
               <br />
@@ -100,7 +100,7 @@ function CardProducts() {
           </Item>
           <Item>
             <div className="card-body">
-              <img className="card-image" src={image} />
+              <img className="card-image" src={image} alt="" />
               <h5 className="card-heading">Product</h5>
               <p className="card-heading">$20</p>
               <button className="card-button">Submit</button>
@@ -108,7 +108,7 @@ function CardProducts() {
           </Item>
           <Item>
             <div className="card-body">
-              <img className="card-image" src={image} />
+              <img className="card-image" src={image} alt="" />
               <h5 className="card-heading">Product</h5>
               <p className="card-heading">$20</p>
               <button className="card-button">Submit</button>
@@ -116,7 +116,7 @@ function CardProducts() {
           </Item>
           <Item>
             <div className="card-body">
-              <img className="card-image" src={image} />
+              <img className="card-image" src={image} alt="" />
               <h5 className="card-heading">Product</h5>
               <p className="card-heading">$20</p>
               <button className="card-button">Submit</button>
@@ -124,7 +124,7 @@ function CardProducts() {
           </Item>
           <Item>
             <div className="card-body">
-              <img className="card-image" src={image} />
+              <img className="card-image" src={image} alt="" />
               <h5 className="card-heading">Product</h5>
               <p className="card-heading">$20</p>
               <button className="card-button">Submit</button>
@@ -132,7 +132,7 @@ function CardProducts() {
           </Item>
           <Item>
             <div className="card-body">
-              <img className="card-image" src={image} />
+              <img className="card-image" src={image} alt="" />
               <h5 className="card-heading">Product</h5>
               <p className="card-heading">$20</p>
               <button className="card-button">Submit</button>
@@ -140,7 +140,7 @@ function CardProducts() {
           </Item>
           <Item>
             <div className="card-body">
-              <img className="card-image" src={image} />
+              <img className="card-image" src={image} alt="" />
               <h5 className="card-heading">Product</h5>
               <p className="card-heading">$20</p>
               <button className="card-button">Submit</button>
@@ -148,7 +148,7 @@ function CardProducts() {
           </Item>
           <Item>
             <div className="card-body">
-              <img className="card-image" src={image} />
+              <img className="card-image" src={image} alt="" />
               <h5 className="card-heading">Product</h5>
               <p className="card-heading">$20</p>
               <button className="card-button">Submit</button>

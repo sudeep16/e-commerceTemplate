@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
 import { Navbar } from "react-bootstrap";
-import logo from "../assets/images/logo.png";
+import logo from "../../assets/images/logo.png";
 
 function Navbars() {
   function clickEvent(e) {
